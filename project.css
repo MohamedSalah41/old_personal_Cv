@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* The @import statement is used  HERE to import the Google Fonts stylesheet, which makes it easy to use the "Poppins" font  */
+
+* {
+
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* this star called Universal Selector which is make the effect in all website and here I made the margin and padding 0 because the browsers add automatically
+padding and margin 
+box-sizing : border box helps in  how to define  the total width and height of an element is calculated 
+scroll-behavior : smooth ; for example when you press in hobbies part the website will go to this part by smoothly way  */
+header {
+  /* background-color: #fff; */
+  background-color: #f0f0f0;/* here i know that is this color is not white but this color more Comfortable for the eyes*/
+  width: 100%; 
+  /* it sets the width of the element to 100% of its parent element's width, which means it will stretch to fill the entire available horizontal space */
+  position: fixed;
+  /*  it stays the nav bar  in the same place even when the page is scrolled */
+  z-index: 999;
+  /* it determines its stack order relative to other elements on the page. In this case, it sets the element to be on top of all other elements with a lower z-index */
+  display: flex;
+  /* it sets the display mode of the element to flex, which turns it into a flex container. This allows you to use flexbox properties to align and distribute its child elements */
+  justify-content: space-between;
+  /* aligns the child elements along the main axis (horizontal in this case) and distributes the space between them evenly. This means that the first and last child elements will be aligned to the left and right edges of the container, respectively, with equal spacing between them */
+  align-items: center;
+  /* this aligns the child elements along the cross axis (vertical in this case) and centers them vertically within the container */
+  padding: 10px 175px;
+}
+
+.navigation a {
+  color: #3a6cf4;
+  text-decoration: none;
+  /* padding: 5px; */
+  padding-left: 10px;
+  font-size: 1.1em; /* em it the defualt size which is in our case 16 px and that is mean that 1.1 em = 16 x 1.1 = 17.6 px*/
+  font-weight: 500; /* To increase the thickness of text */
+}
+.navigation a:hover { /*hover it  effects that occur when the mouse select this item*/
+    
+    color: #1e3d93;
+    
+}
+section{
+  padding : 100px 200px;
+}
+.main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(background_cleanup\ -\ Copy.jpeg); /*this image is the background image in Home page*/
+  background-repeat: no-repeat;                   /*this prevent repeat of image*/
+  background-attachment: fixed;                   /*this make the background image remains fixed in place with respect to the viewport*/
+  background-position: center;                    /*make it's location in center*/
+  background-size: cover;                        /*this sets the size of the background image to cover the entire background area of a container*/
+}
+.main h2{
+  color: white;
+  font-size: 1.4em;
+  font-size: 22.4px;
+}
+.main h2 span{
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #3a6cf4;
+  display: inline-block;/*this a nice css property that give u access to make padding and margin to inline elements*/
+}
+.main h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin: 10px 10px 10px 25px;
+  margin-bottom: 30px;
+}
+.main-btn{
+  color: white;
+  text-decoration: none;/*this to remove any decoration of linked text like underline*/
+  background-color: #3a6cf4;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 15px  35px;
+  letter-spacing: 3px;
+  border-radius: 17.5px;/*this responsible about the space between letters of text*/
+  margin-bottom: 40px;
+  transition: 0.3s ease; /*used to define the transition effect when an element changes its state. In this case, transition: 0.3s*/
+
+}
+.main-btn:hover{
+  /* background-color:  #1e3d93; */
+  background-color:  #fff;
+  color: #3a6cf4;
+  transform: scale(1.07);
+}
+.icon a 
+{
+  color: #fff;
+  display: inline-block;
+  
+  padding-right : 30px;
+ font-size: 27px;
+}
+.location , .phone , #icon-tooltip , #icon-tooltip1{
+  
+  display: inline-block;
+  padding-right: 50px;
+  color: rgb(255, 255, 255);
+  padding-top : 0px;  
+  margin-top: 120px;
+  
+}
+#wth-same-margin , #wth-same-margin1{
+  padding-left: 50px;
+}
+.brief-title , .Education-title{
+  color: #3a6cf4;
+  display: flex;
+  justify-content: center;
+  font-weight:700 ;
+  font-size: 37px;
+  margin-bottom: 30px;
+  
+}
+#Brief-section-div1{
+  display: flex;
+  margin-bottom:30px ;
+  justify-content: center;
+  font-size: 20px;
+  
+  
+}
+
+#Brief div:hover {
+  color: #1e3d93;
+}
+.border{
+  border: 1px solid black;
+  margin-bottom:30px ;
+}
+#Brief-section-div2{
+  font-size: 20px;
+}
+#Brief-section-div2 a{
+  display: inline-block;
+  margin-bottom: 15px;
+  transition: 0.6s ease;
+  color: black;
+  font-size: 20px;
+}
+#Brief-section-div2 a:hover{
+  font-size: 24px;
+  transform: scale(1.07);
+color: #3a6cf4;
+
+}
+#Brief-section-div2 #last-page2{
+  margin-bottom: 100px;
+}
+
+#Experience{
+  
+  background-color: #0d0e23;
+}
+.Experience-title , .language-title ,.training-title ,.skills-title ,.title{
+  color: #3a6cf4;
+  display: flex;
+  justify-content: center;
+  font-weight:700 ;
+  font-size: 37px;
+  margin-bottom: 20px;
+}
+#Experience-section-div1{
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+#Experience-section-div1 a{
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+#Experience-section-div1 a:hover{
+  font-size: 24px;
+  transform: scale(1.07);
+color: #3a6cf4;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content img{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #3a6cf4;
+    border-radius: 40%;
+    
+}
+
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);/*used to add shadow effects to an element and write by this way box-shadow: h-offset v-offset blur spread color;*/
+  border-radius: 10px;/*used to round the corners of an element's border*/
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.training-section-div1 {
+  display: flex;             /*This specifies that the element should use flexbox layout*/
+  justify-content: center;   /*This centers the child elements horizontally along the main axis of the flex container*/
+  flex-direction: row;       /*This sets the main axis of the flex container to be horizontal, so that the child elements are laid out in a row*/   
+  flex-wrap: wrap;           /* This allows the child elements to wrap onto new lines if they exceed the width of the container, creating a multi-line layout*/
+
+}
+.training-section-div1 a{
+  text-decoration: none;
+
+}
+#training .training-title{
+margin-bottom: 50px;
+}
+
+.MYskills-div li{
+  list-style-type: initial;
+  font-size: 25px;
+      margin-bottom: 20px;
+      transition: 0.6s ease;
+      color: #fff;
+   
+}
+.Personality-div li{
+  list-style-type: square;
+  font-size: 25px;
+      margin-bottom: 20px;
+      transition: 0.6s ease;
+      color: #000;
+   
+}
+.MYskills-div li:hover , .Personality-div li:hover{
+  font-size: 27px;
+  transform: scale(1.07);
+}
+footer{
+  
+  padding: 25px;
+  background-color: #0d0e23;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  
+}
+footer span{
+  margin-left: 650px;
+}
+footer a{
+  margin-left: 950px;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
